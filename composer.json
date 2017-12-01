@@ -1,0 +1,49 @@
+{
+    "name": "antwerpfactory/laravel-lightspeed-restaurant",
+    "description": "A Laravel 5 package for the Lightspeed restaurant API",
+    "keywords": [
+        "laravel",
+        "lightspeed",
+        "restaurant",
+        "lightspeedhq",
+        "posios"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Pieter Pelgrims",
+            "email": "pieter@antwerpfactory.com",
+            "homepage": "https://www.antwerpfactory.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6.4",
+        "laravel/framework": "~5.4",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7",
+        "squizlabs/php_codesniffer": "^3.0.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "AntwerpFactory\\LightspeedRestaurant\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AntwerpFactory\\LightspeedRestaurant\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AntwerpFactory\\LightspeedRestaurant\\ServiceProvider"
+            ],
+            "aliases": {
+                "Lightspeedresto": "AntwerpFactory\\LightspeedRestaurant\\Facade"
+            }
+        }
+    }
+}
