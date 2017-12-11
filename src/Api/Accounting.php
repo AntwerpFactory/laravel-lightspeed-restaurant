@@ -23,7 +23,7 @@ class Accounting extends Api
      * @param  string $to
      * @return $this
      */
-    public function getProductSalesAnalytics(string $from, string $to)
+    public function getProductSalesAnalytics($from, $to)
     {
         $endpoint = $this->endpoint("/analytics/productsales");
         $query = $this->query(

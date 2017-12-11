@@ -19,7 +19,7 @@ class Financial extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getProductSalesAnalyticsUsingGET_1
      */
-    public function getProductSalesAnalytics(string $from, string $to)
+    public function getProductSalesAnalytics($from, $to)
     {
         $endpoint = $this->endpoint("/analytics/productsales");
         $query = $this->query(
@@ -59,7 +59,7 @@ class Financial extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReportUsingGET_1
      */
-    public function getReport(int $zNumber)
+    public function getReport($zNumber)
     {
         $endpoint = $this->endpoint("/report/z/{$zNumber}");
         return $this->client->get($endpoint);
@@ -70,7 +70,7 @@ class Financial extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReportStatusUsingGET_1
      */
-    public function getReportStatus(int $zNumber)
+    public function getReportStatus($zNumber)
     {
         $endpoint = $this->endpoint("/report/z/{$zNumber}/status");
         return $this->client->get($endpoint);
@@ -81,7 +81,7 @@ class Financial extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/updateReportStatusUsingPOST_1
      */
-    public function updateReportStatus(int $zNumber, array $data)
+    public function updateReportStatus($zNumber, array $data)
     {
         $endpoint = $this->endpoint("/report/z/{$zNumber}/status");
         return $this->client->post($endpoint, $data);

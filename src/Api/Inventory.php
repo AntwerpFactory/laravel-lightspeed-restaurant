@@ -31,7 +31,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteProductUsingDELETE
      */
-    public function deleteProduct(string $productId)
+    public function deleteProduct($productId)
     {
         $endpoint = $this->endpoint("/product/{$productId}");
         return $this->client->delete($endpoint);
@@ -42,7 +42,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductUsingGET
      */
-    public function getProduct(string $productId)
+    public function getProduct($productId)
     {
         $endpoint = $this->endpoint("/product/{$productId}");
         return $this->client->get($endpoint);
@@ -53,7 +53,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/patchProductUsingPATCH
      */
-    public function patchProduct(string $productId, array $data)
+    public function patchProduct($productId, array $data)
     {
         $endpoint = $this->endpoint("/product/{$productId}");
         return $this->client->patch($endpoint, $data);
@@ -64,7 +64,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/updateProductUsingPUT
      */
-    public function updateProduct(string $productId, array $data)
+    public function updateProduct($productId, array $data)
     {
         $endpoint = $this->endpoint("/product/{$productId}");
         return $this->client->put($endpoint, $data);
@@ -75,7 +75,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getSubproductsUsingGET
      */
-    public function getSubproducts(string $productId)
+    public function getSubproducts($productId)
     {
         $endpoint = $this->endpoint("/product/{$productId}/subproduct");
         return $this->client->get($endpoint);
@@ -86,7 +86,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteSubProductUsingDELETE
      */
-    public function deleteSubProduct(string $productId, string $subProductId)
+    public function deleteSubProduct($productId, $subProductId)
     {
         $endpoint = $this->endpoint("/product/{$productId}/subproduct/{$subProductId}");
         return $this->client->delete($endpoint);
@@ -97,7 +97,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addSubProductUsingPOST
      */
-    public function addSubProduct(string $productId, string $subProductId)
+    public function addSubProduct($productId, $subProductId)
     {
         $endpoint = $this->endpoint("/product/{$productId}/subproduct/{$subProductId}");
         return $this->client->post($endpoint);
@@ -108,7 +108,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteSubProductsUsingDELETE
      */
-    public function deleteSubProducts(string $productId, array $data)
+    public function deleteSubProducts($productId, array $data)
     {
         $endpoint = $this->endpoint("/product/{$productId}/subproduct");
         return $this->client->delete($endpoint, $data);
@@ -119,7 +119,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addSubProductsUsingPOST
      */
-    public function addSubProducts(string $productId, array $data)
+    public function addSubProducts($productId, array $data)
     {
         $endpoint = $this->endpoint("/product/{$productId}/subproduct");
         return $this->client->post($endpoint, $data);
@@ -142,7 +142,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductGroupUsingGET
      */
-    public function getProductGroup(string $productGroupId)
+    public function getProductGroup($productGroupId)
     {
         $endpoint = $this->endpoint("/productgroup/{$productGroupId}");
         return $this->client->get($endpoint);
@@ -153,7 +153,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductsUsingGET_1
      */
-    public function getProductGroupProducts(string $productGroupId, array $data = null)
+    public function getProductGroupProducts($productGroupId, array $data = null)
     {
         $endpoint = $this->endpoint("/productgroup/{$productGroupId}/product");
         $query = $this->query($data);
@@ -165,7 +165,7 @@ class Inventory extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addProductUsingPOST
      */
-    public function addProduct(string $productGroupId, array $data)
+    public function addProduct($productGroupId, array $data)
     {
         $endpoint = $this->endpoint("/productgroup/{$productGroupId}/product");
         return $this->client->post($endpoint, $data);

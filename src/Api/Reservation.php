@@ -42,7 +42,7 @@ class Reservation extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getTablesWithChangedStatusUsingGET
      */
-    public function getTablesWithChangedStatus(string $changedAfter)
+    public function getTablesWithChangedStatus($changedAfter)
     {
         $endpoint = $this->endpoint("/changedtable");
         $query = $this->query(
@@ -86,7 +86,7 @@ class Reservation extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/cancelReservationUsingDELETE
      */
-    public function cancelReservation(string $reservationId)
+    public function cancelReservation($reservationId)
     {
         $endpoint = $this->endpoint("/{$reservationId}");
         return $this->client->delete($endpoint);
@@ -97,7 +97,7 @@ class Reservation extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReservationUsingGET
      */
-    public function getReservation(string $reservationId)
+    public function getReservation($reservationId)
     {
         $endpoint = $this->endpoint("/{$reservationId}");
         return $this->client->get($endpoint);
@@ -108,7 +108,7 @@ class Reservation extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/updateReservationUsingPUT
      */
-    public function updateReservation(string $reservationId, array $data)
+    public function updateReservation($reservationId, array $data)
     {
         $endpoint = $this->endpoint("/{$reservationId}");
         return $this->client->put($endpoint, $data);
@@ -119,7 +119,7 @@ class Reservation extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReceiptsForReservationUsingGET
      */
-    public function getReceiptsForReservation(string $reservationId, array $data)
+    public function getReceiptsForReservation($reservationId, array $data)
     {
         $endpoint = $this->endpoint("/{$reservationId}/receipt");
         $query = $this->query($data);

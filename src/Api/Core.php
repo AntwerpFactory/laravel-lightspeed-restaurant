@@ -30,7 +30,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCompanyUsingGET
      */
-    public function getCompany(string $companyId)
+    public function getCompany($companyId)
     {
         $endpoint = $this->endpoint("/company/{$companyId}");
         return $this->client->get($endpoint);
@@ -41,7 +41,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/patchCompanyUsingPATCH
      */
-    public function patchCompany(string $companyId, array $data)
+    public function patchCompany($companyId, array $data)
     {
         $endpoint = $this->endpoint("/company/{$companyId}");
         return $this->client->patch($endpoint, $data);
@@ -75,7 +75,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerUsingGET
      */
-    public function getCustomer(string $customerId)
+    public function getCustomer($customerId)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}");
         return $this->client->get($endpoint);
@@ -86,7 +86,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/updateCustomerUsingPUT
      */
-    public function updateCustomer(string $customerId, array $data)
+    public function updateCustomer($customerId, array $data)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}");
         return $this->client->put($endpoint, $data);
@@ -97,7 +97,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerCreditsUsingGET
      */
-    public function getCustomerCredit(string $customerId, array $data = null)
+    public function getCustomerCredit($customerId, array $data = null)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/credit");
         $query = $this->query($data);
@@ -109,7 +109,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerCreditChangesUsingGET
      */
-    public function getCustomerCreditChanges(string $customerId)
+    public function getCustomerCreditChanges($customerId)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/creditchange");
         return $this->client->get($endpoint);
@@ -120,7 +120,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/addCustomerCreditsChangeUsingPOST
      */
-    public function addCustomerCreditChanges(string $customerId, array $data)
+    public function addCustomerCreditChanges($customerId, array $data)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/creditchange");
         return $this->client->post($endpoint, $data);
@@ -131,7 +131,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/addLoyaltyCardUsingPOST
      */
-    public function addLoyaltyCard(string $customerId, array $data)
+    public function addLoyaltyCard($customerId, array $data)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/loyaltycard");
         return $this->client->post($endpoint, $data);
@@ -165,7 +165,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getFloorUsingGET
      */
-    public function getFloor(string $floorId)
+    public function getFloor($floorId)
     {
         $endpoint = $this->endpoint("/floor/{$floorId}");
         return $this->client->get($endpoint);
@@ -176,7 +176,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getTablesForFloorUsingGET
      */
-    public function getTablesForFloor(string $floorId, array $data = null)
+    public function getTablesForFloor($floorId, array $data = null)
     {
         $endpoint = $this->endpoint("/floor/{$floorId}/table");
         $query = $this->query($data);
@@ -211,7 +211,7 @@ class Core extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getTableUsingGET
      */
-    public function getTable(string $tableId)
+    public function getTable($tableId)
     {
         $endpoint = $this->endpoint("/tables/{$tableId}");
         return $this->client->get($endpoint);

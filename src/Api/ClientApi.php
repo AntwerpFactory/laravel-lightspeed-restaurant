@@ -72,7 +72,7 @@ class ClientApi implements ClientInterface
         return $this->request('DELETE', $endpoint, $data);
     }
 
-    public function request(string $method, string $endpoint, array $data = null)
+    public function request($method, string $endpoint, array $data = null)
     {
         $response = $this->client->request(
             $method,

@@ -20,7 +20,7 @@ class Labour extends Api
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/labour/getClockTimesUsingGET_1
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/labour/getClockTimesUsingGET
      */
-    public function getClockTimes(string $userId = null, array $data = null)
+    public function getClockTimes($userId = null, array $data = null)
     {
         $endpoint = $this->endpoint("/clocktime/{$userId}");
         $query = $this->query($data);
@@ -33,7 +33,7 @@ class Labour extends Api
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/labour/getEmployeesUsingGET_1
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/labour/getEmployeesUsingGET
      */
-    public function getEmployees(string $userId = null, array $data = null)
+    public function getEmployees($userId = null, array $data = null)
     {
         $endpoint = $this->endpoint("/employee/{$userId}");
         $query = $this->query($data);

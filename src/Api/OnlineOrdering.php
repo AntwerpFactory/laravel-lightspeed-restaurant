@@ -42,7 +42,7 @@ class OnlineOrdering extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getCustomerUsingGET_1
      */
-    public function getCustomer(string $customerId)
+    public function getCustomer($customerId)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}");
         return $this->client->get($endpoint);
@@ -53,7 +53,7 @@ class OnlineOrdering extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getCustomerUsingGET_1
      */
-    public function updateCustomer(string $customerId, array $data)
+    public function updateCustomer($customerId, array $data)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}");
         return $this->client->put($endpoint, $data);
@@ -64,7 +64,7 @@ class OnlineOrdering extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createOrderForCustomerInEstablishmentUsingPOST
      */
-    public function createOrderForCustomerInEstablishment(string $customerId, array $data)
+    public function createOrderForCustomerInEstablishment($customerId, array $data)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/establishmentorder");
         return $this->client->post($endpoint, $data);
@@ -75,7 +75,7 @@ class OnlineOrdering extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrdersForCustomerUsingGET
      */
-    public function getOrdersForCustomer(string $customerId, array $data = null)
+    public function getOrdersForCustomer($customerId, array $data = null)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/order");
         $query = $this->query($data);
@@ -87,7 +87,7 @@ class OnlineOrdering extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createOrderForCustomerUsingPOST
      */
-    public function createOrderForCustomer(string $customerId, array $data)
+    public function createOrderForCustomer($customerId, array $data)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/order");
         return $this->client->post($endpoint, $data);
@@ -98,7 +98,7 @@ class OnlineOrdering extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrderForCustomerUsingGET
      */
-    public function getOrderForCustomer(string $customerId, string $orderId)
+    public function getOrderForCustomer($customerId, $orderId)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/order/{$orderId}");
         return $this->client->get($endpoint);
@@ -109,7 +109,7 @@ class OnlineOrdering extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/updateOrderPartialUsingPATCH
      */
-    public function updateOrderPartial(string $customerId, string $orderId, array $data)
+    public function updateOrderPartial($customerId, $orderId, array $data)
     {
         $endpoint = $this->endpoint("/customer/{$customerId}/order/{$orderId}");
         return $this->client->patch($endpoint, $data);

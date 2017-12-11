@@ -19,7 +19,7 @@ class Liteserver extends Api
      *
      * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/liteserver-conversion/getCloudReceiptIdUsingGET
      */
-    public function convertReceiptId(string $liteserverReceiptId)
+    public function convertReceiptId($liteserverReceiptId)
     {
         $endpoint = $this->endpoint("/receipt/{$liteserverReceiptId}");
         return $this->client->get($endpoint);
