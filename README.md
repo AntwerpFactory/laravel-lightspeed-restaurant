@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/AntwerpFactory/laravel-lightspeed-restaurant.svg?branch=master)](https://travis-ci.org/AntwerpFactory/laravel-lightspeed-restaurant)
+
 # Laravel Lightspeed Restaurant
 
 This package makes working with the Lightspeed Restaurant API a breeze. Once installed you can perform all API calls like so:
