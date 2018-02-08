@@ -17,7 +17,7 @@ class OnlineOrdering extends Api
     /**
      *    Get customers
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createCustomerUsingPOST_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createCustomerUsingPOST_1
      */
     public function getCustomers(array $data = null)
     {
@@ -29,7 +29,7 @@ class OnlineOrdering extends Api
     /**
      *    Create customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createCustomerUsingPOST_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createCustomerUsingPOST_1
      */
     public function createCustomer(array $data)
     {
@@ -40,7 +40,7 @@ class OnlineOrdering extends Api
     /**
      *    Get customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getCustomerUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getCustomerUsingGET_1
      */
     public function getCustomer($customerId)
     {
@@ -51,7 +51,7 @@ class OnlineOrdering extends Api
     /**
      *    Update customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getCustomerUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getCustomerUsingGET_1
      */
     public function updateCustomer($customerId, array $data)
     {
@@ -62,7 +62,7 @@ class OnlineOrdering extends Api
     /**
      *    Create order for customer in establishment
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createOrderForCustomerInEstablishmentUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createOrderForCustomerInEstablishmentUsingPOST
      */
     public function createOrderForCustomerInEstablishment($customerId, array $data)
     {
@@ -73,7 +73,7 @@ class OnlineOrdering extends Api
     /**
      *    Get orders for customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrdersForCustomerUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrdersForCustomerUsingGET
      */
     public function getOrdersForCustomer($customerId, array $data = null)
     {
@@ -85,7 +85,7 @@ class OnlineOrdering extends Api
     /**
      *    Create order for customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createOrderForCustomerUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/createOrderForCustomerUsingPOST
      */
     public function createOrderForCustomer($customerId, array $data)
     {
@@ -96,7 +96,7 @@ class OnlineOrdering extends Api
     /**
      *    Get order for customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrderForCustomerUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrderForCustomerUsingGET
      */
     public function getOrderForCustomer($customerId, $orderId)
     {
@@ -107,7 +107,7 @@ class OnlineOrdering extends Api
     /**
      *    Update order partial
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/updateOrderPartialUsingPATCH
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/updateOrderPartialUsingPATCH
      */
     public function updateOrderPartial($customerId, $orderId, array $data)
     {
@@ -118,7 +118,7 @@ class OnlineOrdering extends Api
     /**
      *    Get features
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getFeaturesUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getFeaturesUsingGET
      */
     public function getFeatures()
     {
@@ -129,7 +129,7 @@ class OnlineOrdering extends Api
     /**
      *    Get orders
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrdersUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getOrdersUsingGET
      */
     public function getOrders(array $data = null)
     {
@@ -141,7 +141,7 @@ class OnlineOrdering extends Api
     /**
      *    Get payment types
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getPaymentTypesUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getPaymentTypesUsingGET
      */
     public function getPaymentTypes()
     {
@@ -152,7 +152,7 @@ class OnlineOrdering extends Api
     /**
      *    Get tax clasess
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getTaxClassesUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/online-ordering/getTaxClassesUsingGET
      */
     public function getTaxClasses()
     {

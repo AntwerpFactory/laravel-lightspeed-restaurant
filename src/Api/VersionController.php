@@ -17,7 +17,7 @@ class VersionController extends Api
     /**
      *    Get version info
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/version-controller/getVersionInfoUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/version-controller/getVersionInfoUsingGET
      */
     public function getInfo()
     {

@@ -17,7 +17,7 @@ class Accounting extends Api
     /**
      *    Get clocktimes
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/accounting/getProductSalesAnalyticsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/accounting/getProductSalesAnalyticsUsingGET
      *
      * @param  string $from
      * @param  string $to

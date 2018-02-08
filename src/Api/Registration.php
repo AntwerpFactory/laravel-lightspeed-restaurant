@@ -17,7 +17,7 @@ class Registration extends Api
     /**
      *    Create a new account
      *
-     * @see http://staging-exact-integration.posios.com/documentation/registration.html#create-a-new-account
+     * @see http://staging-integration.posios.com/documentation/registration.html#create-a-new-account
      */
     public function registerNewAccount(array $data)
     {

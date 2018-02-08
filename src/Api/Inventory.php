@@ -17,7 +17,7 @@ class Inventory extends Api
     /**
      *    Get Products
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductsUsingGET
      */
     public function getProducts(array $data = null)
     {
@@ -29,7 +29,7 @@ class Inventory extends Api
     /**
      *    Delete product
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteProductUsingDELETE
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteProductUsingDELETE
      */
     public function deleteProduct($productId)
     {
@@ -40,7 +40,7 @@ class Inventory extends Api
     /**
      *    Get product
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductUsingGET
      */
     public function getProduct($productId)
     {
@@ -51,7 +51,7 @@ class Inventory extends Api
     /**
      *    Patch product
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/patchProductUsingPATCH
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/patchProductUsingPATCH
      */
     public function patchProduct($productId, array $data)
     {
@@ -62,7 +62,7 @@ class Inventory extends Api
     /**
      *    Update product
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/updateProductUsingPUT
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/updateProductUsingPUT
      */
     public function updateProduct($productId, array $data)
     {
@@ -73,7 +73,7 @@ class Inventory extends Api
     /**
      *    Get subproducts
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getSubproductsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getSubproductsUsingGET
      */
     public function getSubproducts($productId)
     {
@@ -84,7 +84,7 @@ class Inventory extends Api
     /**
      *    Delete subproduct
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteSubProductUsingDELETE
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteSubProductUsingDELETE
      */
     public function deleteSubProduct($productId, $subProductId)
     {
@@ -95,7 +95,7 @@ class Inventory extends Api
     /**
      *    Add subproduct
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addSubProductUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addSubProductUsingPOST
      */
     public function addSubProduct($productId, $subProductId)
     {
@@ -106,7 +106,7 @@ class Inventory extends Api
     /**
      *    Delete subproducts
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteSubProductsUsingDELETE
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/deleteSubProductsUsingDELETE
      */
     public function deleteSubProducts($productId, array $data)
     {
@@ -117,7 +117,7 @@ class Inventory extends Api
     /**
      *    Add subproducts
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addSubProductsUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addSubProductsUsingPOST
      */
     public function addSubProducts($productId, array $data)
     {
@@ -128,7 +128,7 @@ class Inventory extends Api
     /**
      *    Get product groups
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductGroupsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductGroupsUsingGET
      */
     public function getProductGroups(array $data = null)
     {
@@ -140,7 +140,7 @@ class Inventory extends Api
     /**
      *    Get product group
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductGroupUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductGroupUsingGET
      */
     public function getProductGroup($productGroupId)
     {
@@ -151,7 +151,7 @@ class Inventory extends Api
     /**
      *    Get products
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductsUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/getProductsUsingGET_1
      */
     public function getProductGroupProducts($productGroupId, array $data = null)
     {
@@ -163,7 +163,7 @@ class Inventory extends Api
     /**
      *    Add product
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addProductUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/inventory/addProductUsingPOST
      */
     public function addProduct($productGroupId, array $data)
     {

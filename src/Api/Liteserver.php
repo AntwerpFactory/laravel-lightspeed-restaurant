@@ -17,7 +17,7 @@ class Liteserver extends Api
     /**
      *    Convert the liteserver receipt id
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/liteserver-conversion/getCloudReceiptIdUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/liteserver-conversion/getCloudReceiptIdUsingGET
      */
     public function convertReceiptId($liteserverReceiptId)
     {

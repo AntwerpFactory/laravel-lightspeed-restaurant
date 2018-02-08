@@ -17,7 +17,7 @@ class Core extends Api
     /**
      *    Get companies related to this token
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCompaniesUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getCompaniesUsingGET
      */
     public function getCompanies()
     {
@@ -28,7 +28,7 @@ class Core extends Api
     /**
      *    Get company
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCompanyUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getCompanyUsingGET
      */
     public function getCompany($companyId)
     {
@@ -39,7 +39,7 @@ class Core extends Api
     /**
      *    Patch company
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/patchCompanyUsingPATCH
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/patchCompanyUsingPATCH
      */
     public function patchCompany($companyId, array $data)
     {
@@ -50,7 +50,7 @@ class Core extends Api
     /**
      *    Get customers
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomersUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomersUsingGET
      */
     public function getCustomers(array $data = null)
     {
@@ -62,7 +62,7 @@ class Core extends Api
     /**
      *    Create customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/createCustomerUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/createCustomerUsingPOST
      */
     public function createCustomer(array  $data)
     {
@@ -73,7 +73,7 @@ class Core extends Api
     /**
      *    Get customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerUsingGET
      */
     public function getCustomer($customerId)
     {
@@ -84,7 +84,7 @@ class Core extends Api
     /**
      *    Update customer
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/updateCustomerUsingPUT
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/updateCustomerUsingPUT
      */
     public function updateCustomer($customerId, array $data)
     {
@@ -95,7 +95,7 @@ class Core extends Api
     /**
      *    Get customer credit
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerCreditsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerCreditsUsingGET
      */
     public function getCustomerCredit($customerId, array $data = null)
     {
@@ -107,7 +107,7 @@ class Core extends Api
     /**
      *    Get customer credit changes
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerCreditChangesUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getCustomerCreditChangesUsingGET
      */
     public function getCustomerCreditChanges($customerId)
     {
@@ -118,7 +118,7 @@ class Core extends Api
     /**
      *    Add customer credit changes
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/addCustomerCreditsChangeUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/addCustomerCreditsChangeUsingPOST
      */
     public function addCustomerCreditChanges($customerId, array $data)
     {
@@ -129,7 +129,7 @@ class Core extends Api
     /**
      *    Add loyalty card
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/addLoyaltyCardUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/addLoyaltyCardUsingPOST
      */
     public function addLoyaltyCard($customerId, array $data)
     {
@@ -140,7 +140,7 @@ class Core extends Api
     /**
      *    Get company establishments
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getCompanyEstablishmentsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getCompanyEstablishmentsUsingGET
      */
     public function getCompanyEstablishments()
     {
@@ -151,7 +151,7 @@ class Core extends Api
     /**
      *    Get floors
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getFloorsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getFloorsUsingGET
      */
     public function getFloors(array $data = null)
     {
@@ -163,7 +163,7 @@ class Core extends Api
     /**
      *    Get floor
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getFloorUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getFloorUsingGET
      */
     public function getFloor($floorId)
     {
@@ -174,7 +174,7 @@ class Core extends Api
     /**
      *    Get tables for floor
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getTablesForFloorUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getTablesForFloorUsingGET
      */
     public function getTablesForFloor($floorId, array $data = null)
     {
@@ -186,7 +186,7 @@ class Core extends Api
     /**
      *    Get referrals
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getReferralsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getReferralsUsingGET
      */
     public function getReferrals()
     {
@@ -197,7 +197,7 @@ class Core extends Api
     /**
      *    Get tables
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getTablesUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getTablesUsingGET
      */
     public function getTables(array $data = null)
     {
@@ -209,7 +209,7 @@ class Core extends Api
     /**
      *    Get table
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/core/getTableUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/core/getTableUsingGET
      */
     public function getTable($tableId)
     {

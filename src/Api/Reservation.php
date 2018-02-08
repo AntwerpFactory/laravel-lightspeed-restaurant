@@ -17,7 +17,7 @@ class Reservation extends Api
     /**
      *    Get reservations
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReservationsUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReservationsUsingGET
      */
     public function getReservations(array $data = null)
     {
@@ -29,7 +29,7 @@ class Reservation extends Api
     /**
      *    Create reservation
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/createReservationUsingPOST
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/createReservationUsingPOST
      */
     public function createReservation(array $data)
     {
@@ -40,7 +40,7 @@ class Reservation extends Api
     /**
      *    Get tables with changed status
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getTablesWithChangedStatusUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getTablesWithChangedStatusUsingGET
      */
     public function getTablesWithChangedStatus($changedAfter)
     {
@@ -56,7 +56,7 @@ class Reservation extends Api
     /**
      *    Get reservation configuration
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReservationConfigurationUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReservationConfigurationUsingGET
      *
      * @return $this
      */
@@ -69,7 +69,7 @@ class Reservation extends Api
     /**
      *    Get free tables
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getFreeTablesUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getFreeTablesUsingGET
      *
      * @param  array $data
      * @return $this
@@ -84,7 +84,7 @@ class Reservation extends Api
     /**
      *    Cancel reservation
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/cancelReservationUsingDELETE
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/cancelReservationUsingDELETE
      */
     public function cancelReservation($reservationId)
     {
@@ -95,7 +95,7 @@ class Reservation extends Api
     /**
      *    Get reservation
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReservationUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReservationUsingGET
      */
     public function getReservation($reservationId)
     {
@@ -106,7 +106,7 @@ class Reservation extends Api
     /**
      *    Update reservation
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/updateReservationUsingPUT
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/updateReservationUsingPUT
      */
     public function updateReservation($reservationId, array $data)
     {
@@ -117,7 +117,7 @@ class Reservation extends Api
     /**
      *    Get receipts for reservation
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReceiptsForReservationUsingGET
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/reservation/getReceiptsForReservationUsingGET
      */
     public function getReceiptsForReservation($reservationId, array $data)
     {

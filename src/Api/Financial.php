@@ -17,7 +17,7 @@ class Financial extends Api
     /**
      *    Get product sales analytics
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getProductSalesAnalyticsUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/financial/getProductSalesAnalyticsUsingGET_1
      */
     public function getProductSalesAnalytics($from, $to)
     {
@@ -34,7 +34,7 @@ class Financial extends Api
     /**
      *    Get receipts
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReceiptsUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReceiptsUsingGET_1
      */
     public function getReceipts(array $data = null)
     {
@@ -46,7 +46,7 @@ class Financial extends Api
     /**
      *    Get unprocessed reports
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getUnprocessedReportsUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/financial/getUnprocessedReportsUsingGET_1
      */
     public function getUnprocessedReports()
     {
@@ -57,7 +57,7 @@ class Financial extends Api
     /**
      *    Get report
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReportUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReportUsingGET_1
      */
     public function getReport($zNumber)
     {
@@ -68,7 +68,7 @@ class Financial extends Api
     /**
      *    Get report
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReportStatusUsingGET_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/financial/getReportStatusUsingGET_1
      */
     public function getReportStatus($zNumber)
     {
@@ -79,7 +79,7 @@ class Financial extends Api
     /**
      *    Update report status
      *
-     * @see http://staging-exact-integration.posios.com/PosServer/swagger-ui.html#!/financial/updateReportStatusUsingPOST_1
+     * @see http://staging-integration.posios.com/PosServer/swagger-ui.html#!/financial/updateReportStatusUsingPOST_1
      */
     public function updateReportStatus($zNumber, array $data)
     {
